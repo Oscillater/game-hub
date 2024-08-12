@@ -1,10 +1,11 @@
-import { HStack, Image, Text } from '@chakra-ui/react'
+import { HStack, Image } from '@chakra-ui/react'
 import huaji from '../assets/huaiji.webp'
+import ColorModeSwitch from './ColorModeSwitch'
 const NavBar = () => {
   return (
-    <HStack>
+    <HStack justifyContent='space-between' padding='10px'>
       <Image src={huaji} boxSize='60px'/> 
-      <Text>NavBar</Text> 
+      <ColorModeSwitch/>
     </HStack>
   )
 }
